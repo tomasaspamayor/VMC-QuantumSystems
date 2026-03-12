@@ -1,6 +1,14 @@
-A repository that models and analyses three different quantum sytems (SHOs, Electrons and Hydrogen Atoms) numerically. 
-This is done through numerical formulations of each system's respective Schrödinger Equation, and applying the
-necessary methods and approximations.
+# Quantum System Optimization via Variational Monte Carlo
 
-The main focus is in the application of Stochastic Gradient Descent to the optimisation of the different system's Hamiltonians
-in order to define their ground states. The systems are modelled through Variational Monte Carlo methods for integrations.
+A computational physics suite designed to model and analyze quantum systems numerically. This project solves the Schrödinger Equation for various configurations by combining **Variational Monte Carlo (VMC)** for high-dimensional integration and **Stochastic Gradient Descent (SGD)** for Hamiltonian optimization.
+
+## Systems Modeled
+* **Simple Harmonic Oscillators (SHO):** Implementation of multiple oscillators.
+* **Electronic Systems:** Modeling electron interactions and distributions.
+* **Hydrogen Atoms:** Numerical simulation of the simplest atomic system to validate ground state accuracy.
+
+## Methodology
+This repository focuses on finding the ground state energy of quantum systems through:
+1.  **Variational Monte Carlo Methods:** Using trial wavefunctions with tunable parameters.
+2.  **Monte Carlo Integration:** Utilizing stochastic sampling to evaluate complex expectation values.
+3.  **Optimization:** Applying SGD to iteratively minimize the energy functional and converge on the ground state.
